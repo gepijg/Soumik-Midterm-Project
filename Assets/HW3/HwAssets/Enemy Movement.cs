@@ -6,6 +6,7 @@ public float speed = 0.01f;
 public bool movingRight = true;
 public float away = 0f;
 public float reverse = 3f;
+public float breverse = -3f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,7 +27,7 @@ public float reverse = 3f;
     if(away > reverse){
         movingRight = false;
     }
-    if(away < reverse){
+    if(away < breverse){
         movingRight = true;
     }
     }
