@@ -7,7 +7,15 @@ public class Platform : MonoBehaviour
     {
         
     }
-
+       private void OnCollisionEnter2D(Collision2D other)
+    {
+        //This checks to see if the thing you bumped into had the Hazard tag
+        //If it does...
+        if (other.gameObject.CompareTag("Platform"))
+        {
+           
+        }
+    }
     // Update is called once per frame
     void Update()
     {

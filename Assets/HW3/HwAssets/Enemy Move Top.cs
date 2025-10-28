@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovementTop : MonoBehaviour
+
 {
 public float speed = 0.01f;
 public bool movingRight = true;
 public float away = 0f;
-public float reverse = 8f;
-public float breverse = -8f;
-public GameObject otherObject;
+public float reverse = 4f;
+public float breverse = -4f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
