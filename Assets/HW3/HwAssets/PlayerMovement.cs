@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour 
 {
-    public float speed = 0.01f;
+    public float speed = 5f;
   
     Vector2 velocity;
     float gravity;
@@ -38,14 +38,17 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 currentPosition = new Vector3(transform.position.x,transform.position.y,transform.position.z);
         if (Input.GetKey(KeyCode.D)) {
-            transform.position += new Vector3(1,0,0) * speed;
+            transform.position += new Vector3(1,0,0) * speed* Time.deltaTime;
         }
         if(Input.GetKey(KeyCode.A)){
-            transform.position += new Vector3(-1,0,0) * speed;
+            transform.position += new Vector3(-1,0,0) * speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            transform.position += new Vector3(0, 5, 0) * speed;
+        if(Input.GetKey(KeyCode.W)){
+            transform.position += new Vector3(0,1,0) * speed * Time.deltaTime;
         }
+        if(Input.GetKey(KeyCode.S)){
+            transform.position += new Vector3(0,-1,0) * speed * Time.deltaTime;
+        }
+       
     }
 }

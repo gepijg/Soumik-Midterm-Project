@@ -4,8 +4,7 @@ using System.Collections.Generic;
 public class Spawner : MonoBehaviour
 {
     public List<GameObject> Enemy = new List<GameObject>();
-    public GameObject Enemy2;
-    public GameObject Enemy3;
+    public GameObject Small;
     public int spawnAmount = 3;
     public float Timer = 5;
     public int spawnRate = 5;
@@ -22,7 +21,7 @@ public class Spawner : MonoBehaviour
     {
         Random.Range(xMin, xMax);
         int randomeI = Random.Range(0, Enemy.Count);
-        Instantiate(Enemy[randomeI],new Vector3(Random.Range(xMin, xMax), 4, 0), Quaternion.identity);
+        Instantiate(Enemy[randomeI],new Vector3(Random.Range(xMin, xMax), 9, 0), Quaternion.identity);
     }
     public void SpawnMultipleEnemies()
     {
