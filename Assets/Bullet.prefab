@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sdaebefrtbb: {fileID: 0}
+  targettag: Hazard
 --- !u!114 &-4946385550175717494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,4 +162,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eff140c6fc161b4ca3c138961fb3b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 5

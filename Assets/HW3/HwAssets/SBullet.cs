@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class SBullet : MonoBehaviour
 {
-   public float speed = 0.01f;
+    public float speed = 0.01f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,6 +12,6 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0,1,0) * speed * Time.deltaTime;
+        transform.position += new Vector3(0, -1, 0) * speed * Time.deltaTime;
     }
 }

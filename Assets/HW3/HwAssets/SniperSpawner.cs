@@ -1,16 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class Sniper : MonoBehaviour
+public class SniperSpawner : MonoBehaviour
 {
     public List<GameObject> Enemy = new List<GameObject>();
-
+    public GameObject Sniper;
     public int spawnAmount = 3;
     public float Timer = 5;
     public int spawnRate = 5;
     public float xMin = -5;
     public float xMax = 5;
-    public float health = 5;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

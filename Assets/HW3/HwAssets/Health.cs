@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Health : MonoBehaviour
 {
-   public float speed = 0.01f;
+
+    public int health; 
+    
+  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,6 +15,16 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0,1,0) * speed * Time.deltaTime;
+        
     }
+
+    public void TakeDamage()
+    {
+        health -= 1;
+        if (health == 0)
+         {
+             Destroy(gameObject);
+        }
+    }
+   
 }
