@@ -179,9 +179,9 @@ MonoBehaviour:
   Enemy: []
   SB: {fileID: 8193913779494591056, guid: 263649bd6fe4b42479bec65af1cf277f, type: 3}
   Sniper: {fileID: 2975967741106009846}
-  spawnAmount: 3
+  spawnAmount: 2
   Timer: 1
-  fireRate: 1
+  fireRate: 10
 --- !u!114 &1185514591310242773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,4 +194,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce9542cf02fb61469874a79f139a3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 3

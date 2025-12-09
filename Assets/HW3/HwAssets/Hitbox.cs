@@ -20,7 +20,7 @@ public GameObject sdaebefrtbb;
         
         if (other.gameObject.CompareTag(targettag))
         {
-
+           
             // if (health <= 0)
             // {
             //     Destroy(other.gameObject);

@@ -6,7 +6,7 @@ public class SniperSpawner : MonoBehaviour
     public List<GameObject> Enemy = new List<GameObject>();
     public GameObject Sniper;
     public int spawnAmount = 3;
-    public float Timer = 5;
+    public float Timer = 10;
     public int spawnRate = 5;
     public float xMin = -5;
     public float xMax = 5;
@@ -22,7 +22,7 @@ public class SniperSpawner : MonoBehaviour
     {
         Random.Range(xMin, xMax);
         int randomeI = Random.Range(0, Enemy.Count);
-        Instantiate(Enemy[randomeI], new Vector3(Random.Range(xMin, xMax), 9, 0), Quaternion.identity);
+        Instantiate(Enemy[randomeI], new Vector3(Random.Range(xMin, xMax), 8, 0), Quaternion.identity);
     }
     public void SpawnMultipleEnemies()
     {
@@ -39,7 +39,7 @@ public class SniperSpawner : MonoBehaviour
         if (Timer <= 0)
         {
             SpawnMultipleEnemies();
-            Timer = spawnRate;
+            Timer = 10;
         }
     }
 }

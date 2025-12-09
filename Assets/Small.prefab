@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  velocity: {x: 0.01, y: 0, z: 0}
+  velocity: {x: 0.1, y: 0, z: 0}
   sr: {fileID: 0}
 --- !u!114 &2693438088015898869
 MonoBehaviour:
@@ -191,4 +191,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce9542cf02fb61469874a79f139a3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 1

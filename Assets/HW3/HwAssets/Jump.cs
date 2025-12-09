@@ -18,9 +18,9 @@ public float speed = 0.01f;
     // Update is called once per frame
     void Update()
     {
-         if(Input.GetKey(KeyCode.Space)) {
-              rb.linearVelocity = new Vector2(0, jumpSpeed);
-         }
+        // if(Input.GetKey(KeyCode.Space)) {
+         //     rb.linearVelocity = new Vector2(0, jumpSpeed);
+        // }
 
     }
    // void OnCollisionEnter2D(Collision2D collision)
