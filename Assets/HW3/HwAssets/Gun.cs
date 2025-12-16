@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour
     public GameObject Player;
     public int spawnAmount = 3;
     public float Timer = 1f;
+    
    
     public float fireRate  = 1f;
 

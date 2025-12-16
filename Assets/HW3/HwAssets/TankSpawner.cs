@@ -39,7 +39,7 @@ public class TankSpawner : MonoBehaviour
         if (Timer <= 0)
         {
             SpawnMultipleEnemies();
-            Timer = 7;
+            Timer = 10;
         }
     }
 }

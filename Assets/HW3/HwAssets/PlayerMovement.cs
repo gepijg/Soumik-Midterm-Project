@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour 
 {
     public float speed = 10f;
+     public float Timer = 7;
   
     Vector2 velocity;
     float gravity;
@@ -49,6 +50,12 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.S)){
             transform.position += new Vector3(0,-1,0) * speed * Time.deltaTime;
         }
+         // Timer -= Time.deltaTime;
+     //   if(Timer <= 0)
+      //  {
+      // transform.position += new Vector3(-20,-20,0);
+     //   }
        
     }
+   
 }

@@ -5,11 +5,10 @@ public class BossSpawner : MonoBehaviour
 {
     public List<GameObject> Enemy = new List<GameObject>();
     public GameObject Small;
-    public int spawnAmount = 3;
+    public int spawnAmount = 1;
     public float Timer = 7;
     public int spawnRate = 5;
-    public float xMin = -5;
-    public float xMax = 5;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,9 +18,9 @@ public class BossSpawner : MonoBehaviour
 
     public void SpawnRandomEnemy()
     {
-        Random.Range(xMin, xMax);
+     
         int randomeI = Random.Range(0, Enemy.Count);
-        Instantiate(Enemy[randomeI],new Vector3(Random.Range(xMin, xMax), 8, 0), Quaternion.identity);
+        Instantiate(Enemy[randomeI],new Vector3(0, 4, 0), Quaternion.identity);
     }
     public void SpawnMultipleEnemies()
     {
@@ -38,7 +37,7 @@ public class BossSpawner : MonoBehaviour
         if(Timer <= 0)
         {
             SpawnMultipleEnemies();
-            Timer = 7;
+            Timer = 30;
         }
     }
 }
